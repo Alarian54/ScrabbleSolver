@@ -1,0 +1,21 @@
+
+Board.py
+
+- printB(board): Prints the board, including all tiles currently on it, to the command line
+
+- addWord(word, x, y, dir): Adds the selected word to the board, starting at position (x, y)
+                            and facing in direction dir
+
+
+
+Methods.py
+
+- checkValid(word): Returns True if the selected word is in Wordlist.txt
+
+- scorezero(word, x, y, dir): Calculates the score if word is played at position (x, y)
+                              facing dir on an empty board
+                              
+- scoreone(word, pos, x, y, dir): Calculates the score if word is played at position (x, y)
+                                  facing dir, with the letter in position pos already on the board
+                                  
+- sort(words):
