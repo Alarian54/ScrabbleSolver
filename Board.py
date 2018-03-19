@@ -22,9 +22,16 @@ alphabet = "abcdefghijklmnopqrstuvwxyz"
 empty = ["___", "DL ", "TL ", "DW ", "TW "]
 
 def printB(board):
-    for row in board:
-        print " ",
-        for tile in row:
+    print "     ",
+    for i in range(1, 11):
+        print " (" + str(i) + ") ",
+    print "(11)" + "\n"
+    for i in range(0, 11):
+        if i<10:
+            print " (" + str(i+1) + ")  ",
+        else:
+            print " (" + str(i+1) + ") ",
+        for tile in board[i]:
             print tile  , " ",
         print "\n", "\n"
 
